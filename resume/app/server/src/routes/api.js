@@ -43,4 +43,9 @@ router.post('/upload', async ({ request, response }) => {
   response.type = 'application/json'
 })
 
+router.get('/test', async ({ request, response }) => {
+  response.body = "{ \"name\": \"Sunil\" }"
+  response.type = 'application/json'
+})
+
 export default router
